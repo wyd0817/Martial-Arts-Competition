@@ -1,0 +1,64 @@
+/*
+*********************************************************************************************************
+*
+*	                     【草原神鹰工作组】华北五省机器人擂台赛决赛电路引脚分配表(按GPIO次序排列)
+*
+*********************************************************************************************************
+*/
+【按GPIO次序排列, 一共64个GPIO，51个可用,31个兼容5v】
+
+    PA0/WKUP/ADC0/TIM2_CH1_ETR   				3个独立按键(WK_UP)/PB9 (A IN1)  左面                  
+    PA1/ADC1/TIM2_CH2             				LED指示灯(LED0)/PA11(A IN2)  左面  
+    PA2/U2_TX/ADC2/TIM2_CH3       				LED指示灯(LED1)/PB8 (B IN1)  右面     
+    PA3/U2_RX/ADC3/TIM2_CH4             		PA8 (B IN2)  右面 
+    PA4/SPI1_NSS/ADC4       					
+    PA5/SPI1_SCK/ADC5       					
+    PA6/SPI1_MISO/ADC6/TIM3_CH1      			                    
+    PA7/SPI1_MOSI/ADC7/TIM3_CH2         		                  
+    PA8/TIM1_CH1/MCO                	FT     	         
+    PA9/U1_TX/TIM1_CH2              	FT    	RS232串口 USART1      
+    PA10/U1_RX/TIM1_CH3              	FT    	RS232串口 USART1  
+    PA11/CAN_RX/USBDM/TIM1_CH4       	FT   	            
+    PA12/CAN_TX/USBDP/TIM1_ETR       	FT                     
+    PA13/JTMS/SWDIO     			 	FT		SWD调试接口                    
+    PA14/JTCK/SWCLK    				 	FT		SWD调试接口                         
+    PA15/JTDI                        	FT      
+
+    PB0/ADC8/TIM3_CH3           				9 号  PB0(左后）                       
+    PB1/ADC9/TIM3_CH4           				10号  PB1(右后）                     
+    PB2/BOOT1                        	FT		   
+    PB3/JTDO/TRACESWO                   FT       
+    PB4/JNTRST                 			FT		                       
+    PB5/I2C1_SMBAI                              
+    PB6/I2C1_SCL/TIM4_CH1      			FT		OLED显示屏幕(D0)             
+    PB7/I2C1_SDA/TIM4_CH2               FT              
+    PB8/TIM4_CH3          				FT		3个独立按键(KEY0)/14号 PB8(右侧)
+    PB9/TIM4_CH4          				FT		3个独立按键(KEY1)/8号  PB9(右后45）                   
+    PB10/I2C2_SCL/U3_TX                 FT      7号  PB10(右后方）      
+    PB11/I2C2_SDA/U3_RX                 FT      6号  PB11(左后方） 
+    PB12/SPI2_NSS/I2C2_SMBAI/TIM1_BKIN  FT      5号  PB12(左后45）             
+    PB13/SPI2_SCK/TIM1_CH1N             FT		13号 PB13(左侧） 
+    PB14/SPI2_MISO/TIM1_CH2N            FT      4号  PB14(左前45）     
+    PB15/SPI2_MOSI/TIM1_CH3N            FT      3号  PB15(左前方）       
+
+    PC0/ADC10           						11号  PC0(左前）               
+    PC1/ADC11          							OLED显示屏幕(D1)                   
+    PC2/ADC12           						电机驱动使能        
+    PC3/ADC13          							OLED显示屏幕(RES)                    
+    PC4/ADC14                    				12号  PC4(右前）
+    PC5/ADC15       							OLED显示屏幕(DC)                         
+    PC6             				 	FT		OLED显示屏幕(CS1)                     
+    PC7             				 	FT		OLED显示屏幕(CS2)                 
+    PC8                               	FT  	1号  PC8(右前45）
+    PC9         					 	FT		蜂鸣器/2号  PC9(右前方）                      
+    PC10                             	FT  
+    PC11                             	FT  
+    PC12                             
+    PC13/ANT1                        	FT             
+    PC14/OSC32                          		32768Hz时钟输入
+    PC15/OSC32                          		32768Hz时钟输出
+
+    PD0/OSCIN                 		 	FT		8M 主晶振                             
+    PD1/OSCOUT       				 	FT		8M 主晶振                          
+    PD2/TIM3_ETR                     	FT      模式开关(在KEY初始化里面)	    
+
